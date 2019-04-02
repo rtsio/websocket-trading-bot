@@ -18,7 +18,7 @@ Make a POST to /trade with `Content-Type: application/json`, like so:
 }
 ```
 
-Supports multiple trades at once, one per productId (for simplicity).
+Runs on port 8090 by default. Supports multiple trades at once, one per productId (for simplicity).
 
 #### Trading logic
 
