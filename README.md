@@ -7,7 +7,7 @@ Listens to a BUX websocket and makes trades via the BUX API.
 
 #### To create a trade:
 
-Make a POST to /trade with Content-Type: application/json, like so:
+Make a POST to /trade with `Content-Type: application/json`, like so:
 
 ```
 {
@@ -27,5 +27,5 @@ Position will be closed if the current product price is either below lower limit
 
 #### Spring profiles:
 
-default - uses localhost:8080 BUX server
-beta - uses BUX beta environment API
+* default - uses localhost:8080 BUX server
+* beta - uses BUX beta environment API
