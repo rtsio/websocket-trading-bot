@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:bootapp;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+server.port: 8090
+bux:
+  websocket:
+    endpoint: ws://localhost:8080
+  api:
+    endpoint: http://localhost:8080
+  headers:
+    language: nl-NL,en;q=0.8
+    token: eyJhbGciOiJIUzI1NiJ9.eyJyZWZyZXNoYWJsZSI6ZmFsc2UsInN1YiI6ImJiMGNkYTJiLWExMGUtNGVkMy1hZDVhLTBmODJiNGMxNTJjNCIsImF1ZCI6ImJldGEuZ2V0YnV4LmNvbSIsInNjcCI6WyJhcHA6bG9naW4iLCJydGY6bG9naW4iXSwiZXhwIjoxODIwODQ5Mjc5LCJpYXQiOjE1MDU0ODkyNzksImp0aSI6ImI3MzlmYjgwLTM1NzUtNGIwMS04NzUxLTMzZDFhNGRjOGY5MiIsImNpZCI6Ijg0NzM2MjI5MzkifQ.M5oANIi2nBtSfIfhyUMqJnex-JYg6Sm92KPYaUL9GKg
+
+logging.level.io.bux.assignment.websocket: DEBUG
+logging.level.io.bux.assignment.service: DEBUG
+

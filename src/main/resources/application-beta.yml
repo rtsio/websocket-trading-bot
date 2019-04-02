@@ -1,0 +1,8 @@
+bux:
+  websocket:
+    endpoint: wss://rtf.beta.getbux.com
+  api:
+    endpoint: https://api.beta.getbux.com
+
+logging.level.io.bux.assignment.websocket: INFO
+logging.level.io.bux.assignment.service: INFO
