@@ -43,7 +43,7 @@ public class TradeService {
 
     /**
      *  1. Check if given product ID was requested for a trade; if not, ignore (don't try to unsubscribe)
-     *  2. If given product has not yet been bought; if currentPrice is less than or equal to buyPrice, buy and record position ID
+     *  2. If given product has not yet been bought; if currentPrice is less than or equal to buyPrice, and above the lower limit, buy and record position ID
      *  3. If given product has been bought:
      *      - if currentPrice is equal or greater than upper limit: sell, unsubscribe from messages, delete from DB (profit)
      *      - if currentPrice is equal or lesser than lower limit: unsubscribe from messages, delete from DB (loss)
